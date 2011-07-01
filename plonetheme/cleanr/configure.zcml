@@ -1,0 +1,15 @@
+<configure
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns="http://namespaces.zope.org/zope">
+
+    <plone:static directory="theme/cleanr" type="theme" />
+
+    <genericsetup:registerProfile
+      name="default"
+      directory="profiles/default"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+    />
+
+</configure>
